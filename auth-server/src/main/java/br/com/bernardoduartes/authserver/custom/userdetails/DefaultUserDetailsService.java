@@ -1,4 +1,4 @@
-package br.com.bernardoduartes.authserver;
+package br.com.bernardoduartes.authserver.custom.userdetails;
 
 
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MysqlUserDetailsService implements UserDetailsService {
+public class DefaultUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
